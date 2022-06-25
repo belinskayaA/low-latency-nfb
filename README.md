@@ -18,7 +18,7 @@ The project contains many experiments. This repository only provides examples of
 **IDE:** `Jupyter Notebook`
 
 
-| № | Name | Description | Packages&Libraries|
-| ------------------------ | ----- | ----------- | ---------- | 
+| № |Description | Packages&Libraries|
+| ------------------------ | ----------- | ---------- | 
 | [01 - Check real latency](https://github.com/belinskayaA/!!!) | Since we were studying the effect of neurofeedback delay, it was important for us to always check what the REAL delay was in our experiment. Since we are giving real-time feedback, we need time to record the signal, extract the target rhythm envelope, and visualize the feedback. Real-time envelope extraction requires the use of specific signal analysis techniques, which also produce a delay, since we cannot accurately predict how the signal will change in the future. To find out how long this whole process takes, we can take an offline record and calculate the instantaneous alpha amplitude on it, extracted from an EEG with zero delay in an offline analysis. After correlating these two signals, this way we will know the accuracy of our neurofeedback and its delay. | `pylab` `numpy` `scipy.signal` `scipy.stats` `h5py` |
 
